@@ -4,4 +4,4 @@ The Zynq's EMIO GPIO pins are bundled together. This module makes it easier to u
 
 <img src="etc/usage_example.png" width="70%">
 
-*Note: This is a packeged IP core. You can add it to the IP Catalog by adding this folder in Tools / Settings / IP / Repository*
+*Note: This is a packeged IP core. You can add it to the IP Catalog by adding this folder (or any of its parents) in Tools / Settings / IP / Repository*
