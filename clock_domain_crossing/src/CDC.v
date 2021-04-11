@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module CDC #(parameter LENGTH = 5, parameter WIDTH = 8) (
+module CDC #(parameter LENGTH = 5, parameter WIDTH = 1) (
     input clk,
     input [WIDTH-1:0]in,
     output [WIDTH-1:0]out
