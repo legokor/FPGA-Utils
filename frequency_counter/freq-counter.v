@@ -32,11 +32,15 @@ module freq_counter(
         .pulse_out(meas_PSC_out)
     );
     
-    // ------------------------------------------------
+    // counter register -------------------------------
+    reg prev_val;
     wire cntr_rst;
-    always@ (negedge ref2meas_out) begin
-        // negedge detect magic
+    
+    always@ (posedge clk_ref) begin
+        prev_val <= ref2meas_out;
     end
+    
+    assign cntr_rst = ~ref2meas_out & prev_val; // negedge
     // ------------------------------------------------
     
     
