@@ -20,13 +20,17 @@ pulse_divider #(.DIVISOR(5)) test5 (
     .rst(rst)
 );
 
+pulse_divider #(.DIVISOR(8)) test8 (
+    .pulse_in(pulse_in),
+    .rst(rst)
+);
 
 initial begin
 
     pulse_in = 0;
     rst = 0;
     #10 rst = 1;
-    #20 rst = 0; 
+    #20 rst = 0;
 
 end
 
