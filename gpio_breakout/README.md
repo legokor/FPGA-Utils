@@ -1,6 +1,6 @@
 # GPIO breakout
 
-The Zynq's EMIO GPIO pins are bundled together. This module makes it easier to use individual pins of it. You can set the number of pins in the customization GUI.
+The AXI GPIO core's pins and the Zynq's EMIO GPIO pins are bundled together. It's pretty annoying to use Slice and Concat IPs to connect stuff to them. This module lets you use a separate interface port for each pin. The number of pins can be configured in the customization GUI (max 16 for now).
 
 <img src="etc/usage_example.png" width="70%">
 
